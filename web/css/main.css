@@ -8,9 +8,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background:;
   position: relative;
-  font-weight:400px;
+  font-weight: 400;
 }
 
 ul li {
@@ -733,7 +732,7 @@ h2.title:before{
   border-top: 0 none;
 }
 
-.category-products .badge {
+.category-products .panel-default .badge {
   background:none;
   border-radius: 10px;
   color: #696763;
@@ -839,9 +838,8 @@ h2.title {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  margin: 0 15px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin: 0 15px 30px;
   position: relative;
 }
 
@@ -893,13 +891,11 @@ h2.title {
 .product-overlay {
   background:#FE980F;
   top: 0;
-  display: none;
   height: 0;
   position: absolute;
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
-  opacity:;
 }
 
 .single-products:hover .product-overlay {
@@ -2015,20 +2011,20 @@ h2.title {
   color: #363432
 }
 
-.blog-post-area 
+.blog-post-area,
 .post-meta {
   display: block;
   margin-bottom: 25px;
   overflow: hidden;
 }
 
-.blog-post-area 
+.blog-post-area,
 .post-meta ul {
   padding:0;
   display: inline;
 }
 
-.blog-post-area 
+.blog-post-area,
 .post-meta ul li {
   background:#F0F0E9;
   float: left;
@@ -2039,7 +2035,7 @@ h2.title {
   position: relative;
 }
 
-.blog-post-area 
+.blog-post-area,
 .post-meta ul li i {
   background:#FE980F;
   color: #FFFFFF;
@@ -2049,7 +2045,7 @@ h2.title {
 }
 
 .sinlge-post-meta li i:after,
-.blog-post-area 
+.blog-post-area,
 .post-meta ul li i:after {
   content: "";
   position: absolute;
@@ -2141,7 +2137,7 @@ h2.title {
 
 .rating-area {
   border: 1px solid #F7F7F0;
-  direction: block;
+  direction: ltr;
   overflow: hidden;
 }
 
@@ -2158,7 +2154,7 @@ h2.title {
 }
 
 
-.rating-area 
+.rating-area,
 .ratings li i {
   color:#CCCCCC
 }
