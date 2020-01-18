@@ -1,6 +1,9 @@
+<?php
+/** @var array $category */
+
+use yii\helpers\Url; ?>
 <li>
-    <a href="<?= /** @var array $category */
-    \yii\helpers\Url::to(['category/view', 'id'=> $category['id']]  ) ?>">
+    <a href="<?=Url::to(['eshopper/category/view', 'id'=>$category['id']])?>">
         <?= $category['name']; ?>
         <?php if (isset($category['children'])): ?>
             <span class="badge pull-right"><i class="fa fa-plus"></i></span>

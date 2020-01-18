@@ -30,9 +30,8 @@ class MenuWidget extends Widget
         $this->data = Category::find()->asArray()->indexBy('id')->all();
         $this->tree = $this->getTree();
         $this->menuHtml = $this->getMenuHtml($this->tree);
-
         //set cache
-        Yii::$app->cache->set('menu', $this->menuHtml, 60);
+        Yii::$app->cache->set('menu', $this->menuHtml, 20);
 
         return $this->menuHtml;
     }
@@ -56,6 +55,7 @@ class MenuWidget extends Widget
         foreach ($tree as $category) {
             $str .= $this->catToTemplate($category);
         }
+
         return $str;
     }
 

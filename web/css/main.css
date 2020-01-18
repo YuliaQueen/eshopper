@@ -849,6 +849,11 @@ ul.category-products {
 	overflow:hidden;
 }
 
+.features_items_name {
+  height: 20px;
+  overflow: hidden;
+}
+
 
 h2.title {
   color: #FE980F;
